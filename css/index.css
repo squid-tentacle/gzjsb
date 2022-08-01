@@ -1,0 +1,131 @@
+/* * {
+  border: 1px solid;
+} */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #ffffff;
+}
+
+/* 头部标题 */
+.header {
+  display: flex;
+  padding: 30px;
+  background-color: #eee;
+  font-size: 1.6em;
+  line-height: 1.5;
+  letter-spacing: 0.034em;
+  font-family: "思源黑体";
+  justify-content: center;
+}
+.headertext {
+  display: flex;
+  max-width: 460px;
+  align-items: center;
+  flex-direction: row;
+}
+.header h1 {
+  font-size: 50px;
+}
+
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+/* 导航条链接 */
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* 链接颜色修改 */
+.topnav a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+/* 创建两列 */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 100%;
+  font-size: 1.6em;
+  line-height: 1.5;
+  letter-spacing: 0.034em;
+}
+
+/* 图像部分 */
+.fakeimg {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 20px;
+}
+
+/* 文章卡片效果 */
+.card {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* 列后面清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 底部 */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  font-size: 1.6em;
+  line-height: 1.5;
+  letter-spacing: 0.034em;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 0px;
+}
+
+/* 底部栏目样式 */
+.dibulan {
+  width: 100%;
+  height: 160px;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.dibulan-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+
+/* 部分链接样式 */
+.abq:link,
+.abq:visited {
+  text-decoration: none;
+  color: black;
+}
+.abq:hover {
+  text-decoration: underline;
+  color: orange;
+}
