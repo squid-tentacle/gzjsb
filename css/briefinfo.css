@@ -35,6 +35,14 @@
   text-decoration: none;
 }
 
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
 /* 链接颜色修改 */
 .topnav a:hover {
   background-color: rgb(255, 255, 255);
@@ -66,4 +74,14 @@
 .abq:hover {
   text-decoration: underline;
   color: orange;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin-top: 20px;
+}
+.zi {
+  background-color: rgb(255, 255, 255);
+  text-indent: 2em;
 }
