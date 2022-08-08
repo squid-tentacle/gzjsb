@@ -1,0 +1,107 @@
+* {
+  border: 1px solid;
+}
+
+/* 头部标题 */
+.header {
+  display: flex;
+  padding: 10px;
+  background-color: #eee;
+  font-size: 1.6em;
+  line-height: 1.5;
+  letter-spacing: 0.034em;
+  font-family: "思源黑体";
+  justify-content: center;
+}
+.headertext {
+  display: flex;
+  max-width: 460px;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+}
+.header h1 {
+  font-size: 50px;
+}
+/* 响应式布局 -屏幕尺寸小于400px时，标题图片与文字上下分布 */
+@media screen and (max-width: 400px) {
+  .header {
+    display: flex;
+    padding: 10px;
+    background-color: #eee;
+    font-size: 1.6em;
+    line-height: 1.5;
+    letter-spacing: 0.034em;
+    font-family: "思源黑体";
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+/* 导航条 */
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+/* 导航条链接 */
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  align-items: center;
+}
+
+/* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* 链接颜色修改 */
+.topnav a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+/* 底部栏目样式 */
+.dibulan {
+  width: 100%;
+  height: 160px;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.dibulan-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+}
+
+/* 部分链接样式 */
+.abq:link,
+.abq:visited {
+  text-decoration: none;
+  color: black;
+}
+.abq:hover {
+  text-decoration: underline;
+  color: orange;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin-top: 20px;
+}
+.zi {
+  background-color: rgb(255, 255, 255);
+  text-indent: 2em;
+}
