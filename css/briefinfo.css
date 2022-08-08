@@ -14,9 +14,24 @@
   max-width: 460px;
   align-items: center;
   flex-direction: row;
+  text-align: center;
 }
 .header h1 {
   font-size: 50px;
+}
+/* 响应式布局 -屏幕尺寸小于400px时，标题图片与文字上下分布 */
+@media screen and (max-width: 400px) {
+  .header {
+    display: flex;
+    padding: 10px;
+    background-color: #eee;
+    font-size: 1.6em;
+    line-height: 1.5;
+    letter-spacing: 0.034em;
+    font-family: "思源黑体";
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 /* 导航条 */
@@ -33,6 +48,7 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  align-items: center;
 }
 
 /* 响应式布局 -屏幕尺寸小于 400px 时，导航等布局改为上下布局 */
